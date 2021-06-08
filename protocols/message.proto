@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package protocols;
+
+option go_package = "/protocols";
+
+message MessageFoo {
+		string version = 1;
+		int64 index = 2;
+		string foo = 3;
+		string messge = 4;
+}
+
+message MessageBar {
+		string version = 1;
+		int64 index = 2;
+		string bar = 3;
+		string messge = 4;
+}
+
+
+
+
+
