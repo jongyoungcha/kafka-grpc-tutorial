@@ -34,8 +34,6 @@ func (c consumer) SubFoo() (*protocols.MessageFoo, error) {
 		MinBytes:  10e3, // 10KB
 		MaxBytes:  10e6, // 10MB
 	})
-	r.SetOffset(42)
-	r.SetOffset(0)
 
 	for {
 		m, err := r.ReadMessage(context.Background())
